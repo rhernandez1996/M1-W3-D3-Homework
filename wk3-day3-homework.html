@@ -112,7 +112,16 @@
       integerNumber(num);
     });
 
-
+    //Area Function
+  function areaNumber(num) {
+    var area = num *num * Math.PI;
+    document.getElementById("solution").innerHTML = "The area of circle with radius" + num + "is" + area;
+  }
+  var areaButton = document.getElementById("area-button"); //Button ID
+  areaButton.addEventListener("click", function () {
+    var num = document.getElementById("area-input").value;
+    areaNumber(num);
+  });
   
   
 
