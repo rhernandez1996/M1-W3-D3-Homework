@@ -91,7 +91,7 @@
       var num = document.getElementById("percent1-input").value;
       var num2 = document.getElementById("percent2-input").value;
       var percent = (num / num2) *100;
-      document.getElementById("solution").innerHTML = num + ' is ' + percent + "%" + "of" + num2;
+      document.getElementById("solution").innerHTML = num + ' is ' + percent + "% of" + num2;
     }
 
     var percentButton = document.getElementById("percent-button"); //Button ID
@@ -103,7 +103,7 @@
 
     //Integer function
     function integerNumber(num) { 
-      var result = console.log(Math.round(num));
+      var result = Math.round(num);
       document.getElementById("solution").innerHTML = "The nearest whole number of" + num + "is" + result;
     }
     var integerButton = document.getElementById("int-button"); //Button ID
